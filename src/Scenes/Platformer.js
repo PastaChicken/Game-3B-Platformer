@@ -139,11 +139,16 @@ class Platformer extends Phaser.Scene {
       
 
 
-        // debug key listener (assigned to D key)
+        // debug key listener (assigned to D key) 
+        /* for testing
         this.input.keyboard.on('keydown-D', () => {
             this.physics.world.drawDebug = this.physics.world.drawDebug ? false : true
             this.physics.world.debugGraphic.clear()
         }, this);
+        */
+
+       this.physics.world.drawDebug = this.physics.world.drawDebug ? false : true
+            this.physics.world.debugGraphic.clear()
 
         //camera details for level
         this.cameras.main.setBounds(0, 0, this.map.widthInPixels * 2, this.map.heightInPixels);
